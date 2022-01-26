@@ -19,12 +19,13 @@
 .about{
      display: flex;
      text-justify: auto;
+     padding-top: 50px;
 }
-.d-flex{
+/* .d-flex{
     float: left;
-}
+} */
 .lock{
-    
+    display: flex;
     margin: 0 !important;
     padding: 20px;
   
@@ -59,4 +60,61 @@ footer{
     padding-top: 50px;
     text-align: center;
     
+}
+.block{
+    margin-bottom: 10px;
+    font-family:fantasy
+}
+h5{
+    font-weight: bolder;
+}
+.prevention{
+    padding-top: 50px;
+}
+
+.block2{
+    margin-bottom: 10px;  
+}
+.centre{
+    padding-top: 50px;
+    background-color: cornsilk;
+    padding-bottom: 20px;
+}
+.orange{
+    background-color: #fff;
+    border-radius: 20px;
+    color: orange;
+}
+.bleu{
+    background-color: #fff;  
+    border-radius: 20px;
+    color: blue;
+}
+.vert{
+    background-color: #fff; 
+    border-radius: 20px;
+    color: green;
+}
+.rouge{
+    background-color: #fff; 
+    border-radius: 20px;
+    color: red;
+}
+.noir{
+    background-color: #fff; 
+    border-radius: 20px;
+    color: black;
+}
+.appel{
+    border: 2px solid;
+    margin:0 auto;
+    padding: 0;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    background-color:green;
+    color: #fff;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
 }

@@ -1,0 +1,69 @@
+footer{
+    background-color: #333;
+    padding: 20px 0 40px ;
+    color: white;
+}
+
+#form{
+    background-color: #333;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+
+   
+}
+/* #form label{
+    color: #fff;
+}
+.inscription{
+     height: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.global-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0db8de;
+}
+form{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.login-form{
+    width: auto;
+    height: auto;
+    margin: 20px;
+    background: #1a2226 !important;
+    opacity: 0.8;
+    border-radius: 10px !important;
+}
+
+input[type="email"],
+input[type="password"] {
+    /* background: #1a2226; */
+    border: 2px solid #0db8de;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card-title{
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.boutton{
+    background: #0db8de !important;
+    font-size: 14px;
+    transform: translateY(10px);  
+    border-radius: 10px !important;
+}
+.signup{
+    text-align: centre;
+    padding-top: 25px;
+}

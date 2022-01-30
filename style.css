@@ -32,25 +32,15 @@
   
   
 }
-.card{
+/* .card{
     width: 400px;
     height: 150px;
     margin: 20px;
-}
+} */
 
 
-footer{
-    background-color: #333;
-    padding: 20px 0 40px ;
-    color: white;
-}
-.connexion{
-    background: url(images/p5ba5w.jpeg) no-repeat ;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    
-}
+
+/* 
 .formulaire{
     width: 500px;
     display: flex;
@@ -60,7 +50,7 @@ footer{
     padding-top: 50px;
     text-align: center;
     
-}
+} */
 .block{
     margin-bottom: 10px;
     font-family:fantasy
@@ -80,6 +70,10 @@ h5{
     background-color: cornsilk;
     padding-bottom: 20px;
 }
+
+/* .row1{
+    --bs-gutter-x: -8.5rem;
+} */
 .orange{
     background-color: #fff;
     border-radius: 20px;
@@ -118,3 +112,40 @@ h5{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 5px;
 }
+
+.monde1{
+    /* width: 30%; */
+    border: 2px solid black;
+    height: auto;
+    /* margin: 0 auto;
+    padding: 0; */
+    background-color: aliceblue;
+
+}
+.monde2{
+     width: 100%; 
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 100px;
+     border: 2px solid black;
+    margin-top: 50px;
+
+
+}
+.monde3{
+    
+    width: 270px;
+    height: 90px;
+    margin-left: 50px;
+
+}
+footer{
+    background-color: #333;
+    padding: 20px 0 40px ;
+    color: white;
+}
+
+
+

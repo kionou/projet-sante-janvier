@@ -2,7 +2,10 @@
  let monde11 = document.querySelector('.monde11');
  let monde222 = document.querySelector('.monde222')
 
-// let key='16908a9acc764c4c877354d843e8834b';
+
+//  LOCALSTRAGE
+
+
 
 
 
@@ -11,82 +14,49 @@ fetch(`https://disease.sh/v3/covid-19/countries/cote%20d%27ivoire?strict=true`)
 .then(data => {
     console.log(data);
     cote.innerHTML = `
-     <div class="row ">
-                    <div class=" col-lg-4 col-md-4 col-sm-12 " >
-                        <div class="row w-75">
-                            <div class="block2   ">
-                              <div class="conff rouge" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${data.cases}</h5>
-                                  <p class="card-text">Cas confirmés au total</p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                            <div class="block2">
-                              <div class="test bleu"style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${data.tests}</h5>
-                                  <p class="card-text">Nombre total de tests</p>
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
+     <div class="row">
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="jumbotron rouge shadow-lg p-3 mb-5 bg-body rounded ">
+                                <p class="text-center">${data.cases}</p>
+                                <h6 class="text-center">Cas confirmés au total</h6>
+                      </div>
                     </div>
-                    <div class=" col-lg-4 col-md-4 col-sm-12 block1">
-                
-                        <div class="row  w-75 ">
-                            <div class="block2">
-                              <div class="guerri vert" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${data.recovered}</h5>
-                                  <p class="card-text">Cas guéris  </p>
-                                  
-                                </div>
-                              </div>
-                            </div>
-                            <div class="block2">
-                              <div class=" rouge" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${data.updated}</h5>
-                                  <p class="card-text"></p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="jumbotron orange shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${data.active}</p>
+                        <h6 class="text-center">Cas actifs</h6>
+                      </div>
                     </div>
-                    <div class=" col-lg-4 col-md-4 col-sm-12 block1">
-                
-                        <div class="row  w-75 ">
-                            <div class="block2">
-                              <div class="deces noir" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${data.deaths}</h5>
-                                  <p class="card-text">Décès</p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                            <div class="block2">
-                              <div class=" actif orange" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${data.active}</h5>
-                                  <p class="card-text">Cas actifs</p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="jumbotron vert shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${data.recovered}</p>
+                        <h6 class="text-center">Cas guéris</h6>
+                      </div>
                     </div>
-                  </div>
-            </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="jumbotron noir shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${data.deaths} <br>Décès </p>
+                        <h6 class="text-center">Décès</h6>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="jumbotron bleu shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${data.tests}</p>
+                        <h6 class="text-center">Nombre total de tests</h6>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-4">
+                      <div class="jumbotron shadow-lg p-3 mb-5 bg-body rounded">
+                        <h5 class="text-center">${data.updated}</h5>
+                         <p class="text-center">gjyjgyjyj</p>
+                      </div>
+                    </div>
+                </div>
+
     `
 });
 
@@ -99,85 +69,49 @@ fetch(`https://disease.sh/v3/covid-19/all
 
     monde11.innerHTML = `
     
-
- <div class="row ">
-                    <div class=" col-lg-4 col-md-4 col-sm-12 " >
-                        <div class="row w-75">
-                            <div class="block2   ">
-                              <div class="conff rouge" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${word.cases}</h5>
-                                  <p class="card-text">Cas confirmés au total</p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                            <div class="block2">
-                              <div class="test bleu"style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${word.tests}</h5>
-                                  <p class="card-text">Nombre total de tests</p>
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
+     <div class="row">
+                    <div class="col-12 ">
+                      <div class="jumbotron rouge shadow-lg p-3 mb-5 bg-body rounded ">
+                                <p class="text-center">${word.cases}</p>
+                                <h6 class="text-center">Cas confirmés au total</h6>
+                      </div>
                     </div>
-                    <div class=" col-lg-4 col-md-4 col-sm-12 block1">
-                
-                        <div class="row  w-75 ">
-                            <div class="block2">
-                              <div class="guerri vert" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${word.recovered}</h5>
-                                  <p class="card-text">Cas guéris  </p>
-                                  
-                                </div>
-                              </div>
-                            </div>
-                           
-                          </div>
-
-
+                    <div class="col-12 ">
+                      <div class="jumbotron orange shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${word.active}</p>
+                        <h6 class="text-center">Cas actifs</h6>
+                      </div>
                     </div>
-                    <div class=" col-lg-6 col-md-6 col-sm-12 block1">
-                
-                        <div class="row  w-75 ">
-                            <div class="block2">
-                              <div class="deces noir" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${word.deaths}</h5>
-                                  <p class="card-text">Décès</p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                            <div class="block2">
-                              <div class=" actif orange" style="border: 1px solid;">
-                                <div class="card-body">
-                                  <h5 class="card-title">${word.active}</h5>
-                                  <p class="card-text">Cas actifs</p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
+                    <div class="col-12 ">
+                      <div class="jumbotron vert shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${word.recovered}</p>
+                        <h6 class="text-center">Cas guéris</h6>
+                      </div>
                     </div>
-                  </div>
-            </div>
-    
+                </div>
 
+                <div class="row">
+                    <div class="col-12">
+                      <div class="jumbotron noir shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${word.deaths} <br>Décès </p>
+                        <h6 class="text-center">Décès</h6>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="jumbotron bleu shadow-lg p-3 mb-5 bg-body rounded">
+                        <p class="text-center">${word.tests}</p>
+                        <h6 class="text-center">Nombre total de tests</h6>
+                      </div>
+                    </div>
 
+                    <div class="col-12 ">
+                      <div class="jumbotron shadow-lg p-3 mb-5 bg-body rounded">
+                        <h5 class="text-center">${word.updated}</h5>
+                         <p class="text-center">gjyjgyjyj</p>
+                      </div>
+                    </div>
+                </div>
 
-
-
-
-
-
-    
     `
 })
 
@@ -192,18 +126,17 @@ fetch(`https://disease.sh/v3/covid-19/countries`)
 
      for (let i = 0; i < country.length; i++) {
         const element = country[i];
-        // monde222.innerHTML +=  ` 
-        //                  <tr>
-        //                     <td>${[i+1]}</td>
-        //                     <td>${element.country}</td>
-        //                     <td>${element.cases}</td>
-        //                     <td>${element.recovered}</td>
-        //                     <td>${element.deaths}</td>
-        //                     <td>${element.active}</td>
-        //                     <td>${element.tests}</td>
-        //                 </tr>
+        monde222.innerHTML +=  ` 
+                        
+                        <td class="text-center" data-label="pays">${element.country}</td>
+                        <td class="text-center" data-label="cas confirmes">${element.cases}</td>
+                        <td class="text-center" data-label="guerri">${element.recovered}</td>
+                        <td class="text-center" data-label="morts">${element.deaths}</td>
+                        <td class="text-center" data-label="cas actifs">${element.active}</td>
+                        <td class="text-center" data-label="tests ">${element.tests}</td>
         
-        // `
+        
+        `
 
 
     
@@ -213,48 +146,4 @@ fetch(`https://disease.sh/v3/covid-19/countries`)
     }
 })
 
-
-
-
-
-//  <div class="card monde3">
-//                             <div class="card-body text-center">
-//                                 <h5 class="card-title">${word.cases}</h5>
-//                                 <p class="card-text">cars confirmes</p>
-                        
-//                             </div>
-//                         </div>
-                        
-//                         <div class="card monde3">
-//                             <div class="card-body text-center">
-//                                 <h5 class="card-title">${word.recovered}</h5>
-//                                 <p class="card-text">cars guerris</p>
-                        
-//                             </div>
-//                         </div>
-                        
-//                         <div class="card monde3">
-//                             <div class="card-body text-center">
-//                                 <h5 class="card-title">${word.deaths}</h5>
-//                                 <p class="card-text">morts</p>
-                        
-//                             </div>
-//                         </div>
-                        
-//                         <div class="card monde3">
-//                             <div class="card-body text-center">
-//                                 <h5 class="card-title">${word.active}</h5>
-//                                 <p class="card-text">cars actifs</p>
-                        
-//                             </div>
-//                         </div>
-                        
-//                         <div class="card monde3">
-//                             <div class="card-body text-center">
-//                                 <h5 class="card-title">${word.tests}</h5>
-//                                 <p class="card-text">total test</p>
-                        
-//                             </div>
-//                         </div>
-    
 

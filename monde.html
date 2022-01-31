@@ -12,11 +12,42 @@
 
 <body>
 
+<section class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand " href="index.html"><img class="logo" src="images/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">ACCUIEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#preven">PREVENTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="monde.html">MESURE DE SECURITE</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="connexion.html"> connexion <i class="fas fa-sign-in-alt"> </i></a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+
 <section class="monde ">
-    <div class="monde0   container-fluid">
-        <div class="monde1  ">
+    <div class="monde0    d-flex">
+        <div class="monde1 ">
             <div class="container">
-                <form class="d-flex">
+                <form class="">
                     <input class="form-control me-2" type="search" placeholder="exemple: cote d'ivoire" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -26,109 +57,53 @@
                 <div>
                     <h3 class="text-center">evolution dans le monde</h3>
                 </div>
-                   <div class="monde11 d-flex ">
-                        <!-- <div class="card monde3">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">1234567</h5>
-                                <p class="card-text">cars confirmes</p>
-                        
-                            </div>
-                        </div>
-                        
-                        <div class="card monde3">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">1234567</h5>
-                                <p class="card-text">cars guerris</p>
-                        
-                            </div>
-                        </div>
-                        
-                        <div class="card monde3">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">1234567</h5>
-                                <p class="card-text">morts</p>
-                        
-                            </div>
-                        </div>
-                        
-                        <div class="card monde3">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">1234567</h5>
-                                <p class="card-text">cars actifs</p>
-                        
-                            </div>
-                        </div>
-                        
-                        <div class="card monde3">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">1234567</h5>
-                                <p class="card-text">total test</p>
-                        
-                            </div>
-                        </div> -->
-                   </div>
+                 
+                <div class="monde11">
+
+                </div>
 
             </div>
         </div>
 
         <div class="monde2 ">
-            <div class="monde22 container table responsive col-lg-12 ">
-                <table class=" table table-bordered border-info">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">pays</th>
-                            <th scope="col">cas confirmes</th>
-                            <th scope="col">guerri</th>
-                            <th scope="col">morts</th>
-                            <th scope="col">cas actifs</th>
-                            <th scope="col">test</th>
+            <table class=" ">
+                <thead class="table-light">
+                    <tr>
+                    
+                        <th class="text-center" scope="col">Pays</th>
+                        <th class="text-center" scope="col">Cas confirmés au total</th>
+                        <th class="text-center" scope="col">Cas guéris</th>
+                        <th class="text-center" scope="col">Décès</th>
+                        <th class="text-center" scope="col">cas actifs</th>
+                        <th class="text-center" scope="col">Nombre total de tests</th>
+            
+                    </tr>
+                </thead>
+                <tbody class="monde222">
+                    <!-- <tr>
                         
-                        </tr>
-                    </thead>
-                    <tbody class="monde222">
-                        <tr>
-                            <td></td>
-                            <td>Antigua and Barbuda</td>
-                            <td>2523265</td>
-                            <td>2183021</td>
-                            <td>3632</td>
-                            <td>336612</td>
-                            <td>60793732</td>
-                             
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Antigua and Barbuda</td>
-                            <td>2523265</td>
-                            <td>2183021</td>
-                            <td>3632</td>
-                            <td>336612</td>
-                            <td>60793732</td>
-                        
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Antigua and Barbuda</td>
-                            <td>2523265</td>
-                            <td>2183021</td>
-                            <td>3632</td>
-                            <td>336612</td>
-                            <td>60793732</td>
-                        
-                        </tr>
-                    </tbody>
-                </table>
-
-                
-
-          
-               
-            </div>
+                        <td data-label="pays">${element.country}</td>
+                        <td data-label="cas confirmes">${element.cases}</td>
+                        <td data-label="guerri">${element.recovered}</td>
+                        <td data-label="morts">${element.deaths}</td>
+                        <td data-label="cas actifs">${element.active}</td>
+                        <td data-label="tests ">${element.tests}</td>
+            
+                    </tr> -->
+                   
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
 
+
+<footer class="text-center  fixed-botton">
+    <a href="#"><i class="fas fa-chevron-circle-up"></i></a>
+    <p>Suivez-nous sur</p>
+
+    <h5>© Promotion Santé Abidjan-Cote d'Ivoire 2022</h5>
+</footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

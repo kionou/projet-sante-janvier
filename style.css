@@ -1,5 +1,7 @@
 
-
+body{
+    font-family: Avanta Garde;
+}
 
 
 
@@ -20,6 +22,7 @@
      display: flex;
      text-justify: auto;
      padding-top: 50px;
+     font-size: 20px;
 }
 /* .d-flex{
     float: left;
@@ -28,10 +31,15 @@
     display: flex;
     margin: 0 !important;
     padding: 20px;
-  
-  
-  
+ 
 }
+
+.prevention1{
+    font-family:Franklin gothique moyen !important ;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}   
 /* .card{
     width: 400px;
     height: 150px;
@@ -60,6 +68,7 @@ h5{
 }
 .prevention{
     padding-top: 50px;
+   
 }
 
 /* .block2{
@@ -67,51 +76,57 @@ h5{
 } */
 .centre{
     padding-top: 50px;
-    background-color: rgb(230, 172, 172);
-    padding-bottom: 20px;
+    background: url(images/covid_header.jpeg);
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    background-size: cover;
+    width: 100%;
+    
+}
+.cas{
+    color: #fff;
+    padding-top: 20px;
 }
 
 .jumbotron{
     border: 2px  solid black;
     margin-top: 20px;
     border-radius: 20px;
-    background-color: aqua;
+    font-size: 30px;
+    font-family: Courrier !important;
+    font-weight:lighter;
 }
 
 /* .row1{
     --bs-gutter-x: -8.5rem;
 } */
 .orange{
-    background-color: #fff;
+    background-color:orange !important;
     border-radius: 20px;
-    color: orange;
+    color:#fff;
 }
 .bleu{
-    background-color: #fff;  
+    background-color: rgb(80, 207, 246) !important;  
     border-radius: 20px;
-    color: blue;
+    color: #fff;
 }
 .vert{
-    background-color: #fff; 
+    background-color: green !important; 
     border-radius: 20px;
-    color: green;
+    color: #fff;
 }
 .rouge{
-    background-color: #fff; 
+    background-color: red !important; 
     border-radius: 20px;
-    color: red;
+    color: #fff;
 }
 .noir{
-    background-color: #fff; 
+    background-color: black !important; 
     border-radius: 20px;
-    color: black;
+    color: #fff;
 }
 .appel{
     border: 2px solid;
-    margin:0 auto;
-    padding: 0;
-    width: 700px;
-    height: 100px;
     text-align: center;
     background-color:green;
     color: #fff;
@@ -119,6 +134,10 @@ h5{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 5px;
 }
+/* .monde0{
+    display: flex;
+    width: 100% !important;
+} */
 
 .monde1{
     /* width: 30%; */

@@ -19,20 +19,19 @@ fetch(`https://disease.sh/v3/covid-19/countries/cote%20d%27ivoire?strict=true`)
      <div class="row">
                     <div class="col-12 col-lg-4 col-md-4">
                       <div class="jumbotron rouge shadow-lg p-3 mb-5 bg-body rounded ">
-                                <p class="text-center">${data.cases}</p>
-                                <h6 class="text-center">Cas confirmés au total</h6>
+                                <p class="text-center">${data.cases} <br> Cas confirmés au total</p>
+                               
                       </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-4">
                       <div class="jumbotron orange shadow-lg p-3 mb-5 bg-body rounded">
-                        <p class="text-center">${data.active}</p>
-                        <h6 class="text-center">Cas actifs</h6>
+                        <p class="text-center">${data.active} <br>Cas actifs</p>
+                      
                       </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-4">
                       <div class="jumbotron vert shadow-lg p-3 mb-5 bg-body rounded">
-                        <p class="text-center">${data.recovered}</p>
-                        <h6 class="text-center">Cas guéris</h6>
+                        <p class="text-center">${data.recovered} <br>Cas guéris </p>
                       </div>
                     </div>
                 </div>
@@ -41,20 +40,20 @@ fetch(`https://disease.sh/v3/covid-19/countries/cote%20d%27ivoire?strict=true`)
                     <div class="col-12 col-lg-4 col-md-4">
                       <div class="jumbotron noir shadow-lg p-3 mb-5 bg-body rounded">
                         <p class="text-center">${data.deaths} <br>Décès </p>
-                        <h6 class="text-center">Décès</h6>
+                        
                       </div>
                     </div>
                     <div class="col-12 col-lg-4 col-md-4">
                       <div class="jumbotron bleu shadow-lg p-3 mb-5 bg-body rounded">
-                        <p class="text-center">${data.tests}</p>
-                        <h6 class="text-center">Nombre total de tests</h6>
+                        <p class="text-center">${data.tests} <br>Nombre total de tests</p>
+                        
                       </div>
                     </div>
 
                     <div class="col-12 col-lg-4 col-md-4">
                       <div class="jumbotron shadow-lg p-3 mb-5 bg-body rounded">
-                        <h5 class="text-center">${data.updated}</h5>
-                         <p class="text-center">gjyjgyjyj</p>
+                        <h5 class="text-center">${data.updated} <br>ggggtttttt</h5>
+                       
                       </div>
                     </div>
                 </div>

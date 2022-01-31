@@ -12,12 +12,12 @@ form{
 }
 
 .login-form{
-    width: 380px;
-    height: 450px;
+    width: 400px;
+    height: 500px;
     margin: 20px;
-    background: #1a2226 !important;
-    opacity: 0.8;
+    background: #fff !important;
     border-radius: 10px !important;
+    font-family: monospace;
 }
 
 input[type="email"],
@@ -29,9 +29,14 @@ input[type="password"] {
 }
 
 .card-title{
-    font-weight: 900;
+    font-weight: 200;
     padding-top: 20px;
+    font-size: larger;
+    font-family: monospace;
+   
+
 }
+
 
 .boutton{
     background: #0db8de !important;
@@ -49,8 +54,8 @@ footer{
     color: white;
 }
 .connexion{
-    background: url(images/p5ba5w.jpeg) no-repeat ;
+    background: url(images/COVID19-taskforce-840.jpeg) no-repeat center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
 }

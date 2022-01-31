@@ -138,6 +138,9 @@ h5{
     display: flex;
     width: 100% !important;
 } */
+.monde{
+    padding-top: 30px;
+}
 
 .monde1{
     /* width: 30%; */
@@ -169,6 +172,26 @@ h5{
     margin-left: 50px; 
 
 } */
+.evo{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: Verdana;
+}
+.search{
+    padding-top: 30px;
+    margin-top: 30px;
+
+}
+input[type="search"] {
+    
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 13px;
+    font-family:fantasy;
+    font-size: 20px;
+}
 
 table{
     width: 100%;
@@ -189,7 +212,7 @@ tr:nth-child(odd) {
 }
 
 
-@media only screen and ( max-width: 700px) {
+@media only screen and ( max-width: 992px) {
     table,thead,tbody,tr,th,td {
         display: block;
     }

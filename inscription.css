@@ -12,39 +12,35 @@ footer{
 
    
 }
-/* #form label{
-    color: #fff;
-}
-.inscription{
-     height: 100%;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+
 
 .global-container{
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     color: #0db8de;
 }
+
 form{
     padding-top: 10px;
     font-size: 14px;
     margin-top: 30px;
+}
+.row{
+    margin: 10px 0;
 }
 
 .login-form{
     width: auto;
     height: auto;
     margin: 20px;
-    background: #1a2226 !important;
-    opacity: 0.8;
+    background:#fff !important;
     border-radius: 10px !important;
+    font-family: monospace;
 }
 
 input[type="email"],
+input[type="text"],
 input[type="password"] {
     /* background: #1a2226; */
     border: 2px solid #0db8de;
@@ -66,4 +62,15 @@ input[type="password"] {
 .signup{
     text-align: centre;
     padding-top: 25px;
+}
+.inscription{
+    background: url(images/simulacio-n-de-vacuna-frente-al-covid-19-foto-freepik.jpeg) no-repeat center;
+    width: 100%;
+    height: 80vh;
+    background-size: cover; 
+}
+.image{
+    width: 100px;
+    height: 200px;
+    text-align: center;
 }

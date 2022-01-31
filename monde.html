@@ -13,9 +13,9 @@
 <body>
 
 <section class="menu">
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
         <div class="container">
-            <a class="navbar-brand " href="index.html"><img class="logo" src="images/logo2.png" alt=""></a>
+            <a class="navbar-brand " href="index.html"><img class="logo "  src="images/logocovid.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,55 +44,70 @@
 
 
 <section class="monde container-fluid">
-    <div class="monde0 d-flex  my-2" ">
-        <div class="monde1 ">
-            <div class="container">
-                <form class="search">
-                    <input class="form-control me-2"  type="search" placeholder="exemple: cote d'ivoire" aria-label="Search">
-                </form>
-            </div>
-            
-            <div class="container">
-                <div>
-                    <h3 class="text-center">evolution dans le monde</h3>
-                </div>
-                 
-                <div class="monde11">
+    <div class="monde0 " >
+            <div class="row">
 
-                </div>
-
-            </div>
-        </div>
-
-        <div class="monde2 ">
-            <table class=" ">
-                <thead class="table-light">
-                    <tr>
+              <div class="col-6 col-lg-3 col-md-4 col-sm-5">
+                <div class="monde1 ">
+                    <div class="container">
+                        <form class="search">
+                            <input class="form-control me-2"  type="search" placeholder="exemple: cote d'ivoire" aria-label="Search">
+                        </form>
+                    </div>
                     
-                        <th class="text-center" scope="col">Pays</th>
-                        <th class="text-center" scope="col">Cas confirmés au total</th>
-                        <th class="text-center" scope="col">Cas guéris</th>
-                        <th class="text-center" scope="col">Décès</th>
-                        <th class="text-center" scope="col">cas actifs</th>
-                        <th class="text-center" scope="col">Nombre total de tests</th>
+                    <div class="container">
+                        <div>
+                            <h3 class="evo">evolution dans le monde</h3>
+                        </div>
+                         
+                        <div class="monde11">
+        
+                        </div>
+        
+                    </div>
+                </div>
+
+              </div>
+
+              <div class="col-6 col-lg-9 col-md-8 col-sm-7">
+                <div class="monde2 " style="background-color: antiquewhite;">
+                    <table class=" ">
+                        <thead class="table-light">
+                            <tr>
+                            
+                                <th class="text-center" scope="col">Pays</th>
+                                <th class="text-center" scope="col">Cas confirmés au total</th>
+                                <th class="text-center" scope="col">Cas guéris</th>
+                                <th class="text-center" scope="col">Décès</th>
+                                <th class="text-center" scope="col">cas actifs</th>
+                                <th class="text-center" scope="col">Nombre total de tests</th>
+                    
+                            </tr>
+                        </thead>
+                        <tbody class="monde222">
+                            <!-- <tr>
+                                
+                                <td data-label="pays">${element.country}</td>
+                                <td data-label="cas confirmes">${element.cases}</td>
+                                <td data-label="guerri">${element.recovered}</td>
+                                <td data-label="morts">${element.deaths}</td>
+                                <td data-label="cas actifs">${element.active}</td>
+                                <td data-label="tests ">${element.tests}</td>
+                    
+                            </tr> -->
+                           
+                        </tbody>
+                    </table>
+                </div>
+              </div>
             
-                    </tr>
-                </thead>
-                <tbody class="monde222">
-                    <!-- <tr>
-                        
-                        <td data-label="pays">${element.country}</td>
-                        <td data-label="cas confirmes">${element.cases}</td>
-                        <td data-label="guerri">${element.recovered}</td>
-                        <td data-label="morts">${element.deaths}</td>
-                        <td data-label="cas actifs">${element.active}</td>
-                        <td data-label="tests ">${element.tests}</td>
-            
-                    </tr> -->
-                   
-                </tbody>
-            </table>
-        </div>
+            </div>
+        
+
+
+       
+
+       
     </div>
 </section>
 

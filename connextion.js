@@ -11,6 +11,7 @@ form1.addEventListener('submit', (e)=>{
     console.log(e);
     if (mail.value === connexion.email  && password1.value === connexion.password )
      {
+        window.location.assign("index.html")
         alert("merci");
         
     }else{

@@ -148,3 +148,24 @@ fetch(`https://disease.sh/v3/covid-19/countries`)
 })
 
 
+fetch(`https://newsapi.org/v2/tout ? q=apple & from=2022-01-31 & to=2022-01-31 & sortBy=popularité &apiKey=00fea5ceefff4412b004409704275314`)
+.then(res => res.json())
+.then(nouveau => {
+  console.log(nouveau);
+
+
+})
+
+
+var url = 'https://newsapi.org/v2/everything?' +
+          'q=Apple&' +
+          'from=2022-02-01&' +
+          'sortBy=popularity&' +
+          'apiKey=00fea5ceefff4412b004409704275314';
+
+var req = new Request(url);
+
+fetch(req)
+    .then(function(response) {
+        console.log(response.json());
+    })

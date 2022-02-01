@@ -5,6 +5,7 @@ var password = document.querySelector('#password');
 var confirmer = document.querySelector('#confirmer');
 var formulaire = document.querySelector('#formulaire')
 console.log('rrrrr');
+var userbase = [];
 
 formulaire.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -19,9 +20,14 @@ formulaire.addEventListener('submit', (e) => {
     console.log(nom.value);
     if (password.value != confirmer.value) {
         alert('les mots de passe ne sont pas conforme')
-    } else {
+    } else if (user != true) {
+        alert("eee")
+    } {
        
     }
-    localStorage.setItem('one', JSON.stringify(user));
+     localStorage.setItem('one', JSON.stringify(user));
     console.log(user);
+    let local = userbase.push(user)
+    console.log(local);
+    console.log(userbase);
 })

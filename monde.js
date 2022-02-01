@@ -17,19 +17,19 @@ fetch(`https://disease.sh/v3/covid-19/all
     
      <div class="row">
                     <div class="col-12 ">
-                      <div class="jumbotron rouge shadow-lg p-3 mb-5 bg-body rounded ">
+                      <div class="jumbotron rouge ">
                                 <p class="text-center">${word.cases} <br>Cas confirmés au total</p>
                                 
                       </div>
                     </div>
                     <div class="col-12 ">
-                      <div class="jumbotron orange shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="jumbotron orange ">
                         <p class="text-center">${word.active} <br> Cas actifs</p>
                         
                       </div>
                     </div>
                     <div class="col-12 ">
-                      <div class="jumbotron vert shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="jumbotron vert ">
                         <p class="text-center">${word.recovered} <br> Cas guéris</p>
                         
                       </div>
@@ -38,20 +38,20 @@ fetch(`https://disease.sh/v3/covid-19/all
 
                 <div class="row">
                     <div class="col-12">
-                      <div class="jumbotron noir shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="jumbotron noir ">
                         <p class="text-center">${word.deaths} <br>Décès </p>
                        
                       </div>
                     </div>
                     <div class="col-12">
-                      <div class="jumbotron bleu shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="jumbotron bleu ">
                         <p class="text-center">${word.tests} <br> Nombre total de tests</p>
                        
                       </div>
                     </div>
 
                     <div class="col-12 ">
-                      <div class="jumbotron shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="jumbotron ">
                         <h5 class="text-center">${word.updated} <br> gjyjgyjyj</h5>
                          
                       </div>

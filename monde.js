@@ -1,7 +1,7 @@
  let monde11 = document.querySelector('.monde11');
  let monde222 = document.querySelector('.monde222');
  let search = document.querySelector('input');
- console.log(search);
+//  console.log(search);
 
 
 
@@ -51,8 +51,8 @@ fetch(`https://disease.sh/v3/covid-19/all
                     </div>
 
                     <div class="col-12 ">
-                      <div class="jumbotron ">
-                        <h5 class="text-center">${word.updated} <br> gjyjgyjyj</h5>
+                      <div class="jumbotron bleu">
+                        <p class="text-center">${word.affectedCountries} <br> Pays affectés<p>
                          
                       </div>
                     </div>
@@ -61,66 +61,69 @@ fetch(`https://disease.sh/v3/covid-19/all
     `
 })
 
+let recherche = '';
+
+const cherche = async()  => {
+  monde = await fetch(`https://disease.sh/v3/covid-19/countries/${recherche}`)
+  .then(res => res.json())
+  return monde;
+
+}
+
+async function affiche(){
+  country = await cherche()
+  console.log(country);
 
 
-
-
-fetch(`https://disease.sh/v3/covid-19/countries`)
-.then(res => res.json())
-.then(country => {
-    console.log(country);
-
-     for (let i = 0; i < country.length; i++) {
+   for (let i = 0; i < country.length; i++) {
         const element = country[i];
         monde222.innerHTML +=  ` 
                         
-                        <td class="text-center" data-label="pays">${element.country}</td>
-                        <td class="text-center" data-label="cas confirmes">${element.cases}</td>
-                        <td class="text-center" data-label="guerri">${element.recovered}</td>
-                        <td class="text-center" data-label="morts">${element.deaths}</td>
-                        <td class="text-center" data-label="cas actifs">${element.active}</td>
-                        <td class="text-center" data-label="tests ">${element.tests}</td>
+                        <td class="text-center" data-label="pays">${ country[i].country}</td>
+                        <td class="text-center" data-label="cas confirmes">${ country[i].cases}</td>
+                        <td class="text-center" data-label="guerri">${ country[i].recovered}</td>
+                        <td class="text-center" data-label="morts">${ country[i].deaths}</td>
+                        <td class="text-center" data-label="cas actifs">${ country[i].active}</td>
+                        <td class="text-center" data-label="tests ">${ country[i].tests}</td>
         
         
-        `
-
-
-    
- 
-
-        
+        `        
     }
-})
+}
+affiche();
+
   
-let recherche = '';
+
 search.addEventListener('input' , (e)   =>{
     e.preventDefault();
     recherche = e.target.value
-    console.log(recherche);
-  fetch(`https://disease.sh/v3/covid-19/countries/${recherche}?strict=true`)
-.then(res => res.json())
-.then(word => {
-    console.log(word);
-     monde222.innerHTML = " ";
 
-       monde222.innerHTML +=  ` 
+
+async function affichepays(){
+  country = await cherche()
+  console.log(country);
+
+        monde222.innerHTML ="";
+        monde222.innerHTML +=  ` 
                         
-                        <td class="text-center" data-label="pays">${word.country}</td>
-                        <td class="text-center" data-label="cas confirmes">${word.cases}</td>
-                        <td class="text-center" data-label="guerri">${word.recovered}</td>
-                        <td class="text-center" data-label="morts">${word.deaths}</td>
-                        <td class="text-center" data-label="cas actifs">${word.active}</td>
-                        <td class="text-center" data-label="tests ">${word.tests}</td>
+                        <td class="text-center" data-label="pays">${ country.country}</td>
+                        <td class="text-center" data-label="cas confirmes">${ country.cases}</td>
+                        <td class="text-center" data-label="guerri">${ country.recovered}</td>
+                        <td class="text-center" data-label="morts">${ country.deaths}</td>
+                        <td class="text-center" data-label="cas actifs">${ country.active}</td>
+                        <td class="text-center" data-label="tests ">${ country.tests}</td>
         
         
-        `
-    //  for (let i = 0; i < word.length; i++) {
-    //     const element = word[i];
-      
+        `        
+}
+affichepays();
 
-        
-    // }
-})
 
-})
+
+if (search === "") {
+  console.log(search);
+  
+}
+
+});
 

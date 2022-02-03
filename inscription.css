@@ -1,43 +1,55 @@
+body{
+    /* background-color: aqua; */
+    background: url(images/simulacio-n-de-vacuna-frente-al-covid-19-foto-freepik.jpeg) no-repeat center;
+    width: 100%;
+    height: auto;
+    background-size: cover; 
+   
+}
+
+
 footer{
     background-color: #333;
-    padding: 20px 0 40px ;
+    padding: 20px 0 10px ;
     color: white;
 }
 
-#form{
+/* #form{
     background-color: #333;
     padding: 30px;
     margin-top: 50px;
     border-radius: 10px;
 
    
-}
+} */
 
 
 
-.global-container{
-    height: 100%;
+/* .global-container{ */
+    /* height: 100%;
     display: flex;
     justify-content: center;
-}
+     */
+     /* position: absolute;
+     left: 50%;
+     top: 50%;
+     padding: 50px;
+} */
 
 form{
-    padding-top: 10px;
+    padding: 10px 20px;
     font-size: 16px;
-    margin-top: 30px;
-}
-.row{
-    margin: 10px 0;
-}
-
-.login-form{
-    width: auto;
-    height: auto;
-    /* margin: 20px; */
-    background:#fff !important;
+    margin: 10px auto;
+    max-width: 400px;
+     background: #fff !important;
     border-radius: 10px !important;
-    font-family: monospace;
+     font-family: monospace;
 }
+/* .row{
+    margin: 10px 0;
+} */
+
+
 
 input[type="email"],
 input[type="text"],
@@ -46,12 +58,11 @@ input[type="password"] {
     border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 13px;
+    font-family: monospace;
+    font-size: 16px;
 }
 
-.card-title{
-    font-weight: 900;
 
-}
 
 .boutton{
 
@@ -59,18 +70,19 @@ input[type="password"] {
     transform: translateY(10px);  
     border-radius: 10px !important;
 }
-.signup{
+/* .signup{
     text-align: centre;
     padding-top: 25px;
-}
-.inscription{
+} */
+ /* .inscription{
     background: url(images/simulacio-n-de-vacuna-frente-al-covid-19-foto-freepik.jpeg) no-repeat center;
     width: 100%;
     height: 80vh;
     background-size: cover; 
-}
-.image{
+} */
+
+/* .image{
     width: 100px;
     height: 200px;
     text-align: center;
-}
+} */

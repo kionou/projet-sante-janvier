@@ -6,8 +6,16 @@ var confirmer = document.querySelector('#confirmer');
 var formulaire = document.querySelector('#formulaire')
 let message = document.querySelector('.message');
 let message1 = document.querySelector('.message1')
-console.log('rrrrr');
+console.log(nom);
 var userbase = [];
+
+
+if(!localStorage.getItem("users")){
+localStorage.setItem("users" , JSON.stringify([]))
+console.log(localStorage.getItem("users"));
+
+
+}
 
 formulaire.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -27,7 +35,9 @@ formulaire.addEventListener('submit', (e) => {
         message.style.border = 'red 2px solid'
         message.style.borderRadius = '10px'
         message.style.opacity = '0.6'
-    } else if (user != " " ) {
+
+    } else if (user.nom  === "" || user.prenom === ""  || user.email === "" || password.prenom === "" || confirmer.prenom === "") {
+
         message1.innerHTML='Remplicer tout les champs .'
         message1.style.color = 'red'
         message1.style.textAlign = 'center'
@@ -37,11 +47,11 @@ formulaire.addEventListener('submit', (e) => {
     }else {
         window.location.assign("connexion.html")
     }
-     localStorage.setItem('one', JSON.stringify(user));
 
+   let users =   JSON.parse(localStorage.getItem("users"));
 
-    console.log(user);
-    let local = userbase.push(user)
-    console.log(local);
-    console.log(userbase);
+    console.log(users);
+    let local = users.push(user)
+    localStorage.setItem("users",JSON.stringify(users))
+    console.log('userfff', JSON.parse(localStorage.getItem("users")) );
 })

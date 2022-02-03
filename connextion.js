@@ -5,13 +5,15 @@ var password1 = document.querySelector("#password");
 // var button1 = document.querySelector("#butt1");
 var form1 = document.querySelector("#form");
 
-let connexion = JSON.parse(localStorage.getItem("one"));
+let connexion = JSON.parse(localStorage.getItem("users"));
 console.log(connexion);
 
 form1.addEventListener('submit', (e)=>{
     e.preventDefault();
     console.log(e);
-    if (mail.value === connexion.email  && password1.value === connexion.password )
+   for (let i = 0; i < connexion.length; i++) {
+       const element = connexion[i];
+        if (mail.value === connexion[i].email  && password1.value === connexion[i].password )
      {
         window.location.assign("monde.html")
         
@@ -25,4 +27,6 @@ form1.addEventListener('submit', (e)=>{
         message.style.opacity = '0.6'
 
     }
+       
+   }
 })

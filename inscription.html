@@ -10,9 +10,9 @@
 </head>
 <body>
 <section class="menu">
-    <nav class="navbar navbar-expand-lg navbar-light  bg-info">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand " href="index.html"><img class="logo w-25" src="images/logocovid.png" alt=""></a>
+            <a class="navbar-brand " href="index.html"><img class="logo w-25" src="images/logocovid0.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,10 @@
                         <a class="nav-link " href="monde.html">MESURE DE SECURITE</a>
                     </li>
                 </ul>
-                <div class="d-flex">
+                <!-- <div class="d-flex">
                     <a href="connexion.html"> connexion <i class="fas fa-sign-in-alt"> </i></a>
 
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
@@ -41,69 +41,50 @@
 <section class="inscription container-fluid">
   
     <div class="global-container">
-        <div class="card login-form">
-            <div class="card-body">
-                <div class=" text-center">
-                    <img  class="w-25"src="images/logocovid.png" alt="">
-                </div>
-                <h5 class="card-title text-center">Creer voter compte.  </h5>
-                
-                <div class="message"></div>
-                <div class="message1"></div>
-                <div class="card-text">
-                    
-                
-                        <form class="form-group" id="formulaire">
-                            <div class="row">
-                                <div class="col-lg-6 ">
-                                    <label>Prenom</label>
-                                    <input type="text" name="fname" class="form-control" id="prenom" placeholder="Prenon">
-                                </div>
-                        
-                                <div class="col-lg-6">
-                                    <label>Nom</label>
-                                    <input type="text" name="lname" class="form-control" id="nom" placeholder="Nom">
-                                </div>
-                            </div>
-                            <label>E-mail</label>
-                            <input type="email" name="email" class="form-control" id="mail" placeholder="email">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <label>password </label>
-                                    <input type="password" name="fname" class="form-control"  id="password" placeholder="Nouveau mot de passe">
-                                </div>
-                        
-                                <div class="col-lg-6">
-                                    <label>repeter le mot de passe</label>
-                                    <input type="password" name="lname" class="form-control" id="confirmer" placeholder="répéter le mot de passe">
-                                </div>
+        <form class="form-group" id="formulaire">
+            <div class=" text-center">
+                    <img class="w-50" src="images/logocovid0.png" alt="">
+             </div>
+             <h5 class=" text-center">Creer voter compte. </h5>
+             <div class="message"></div>
+             <div class="message1"></div>
+             <div class="row">
+                 <div class="col-12 ">
+                                        <label>Prenom</label>
+                                        <input type="text" name="fname" class="form-control" id="prenom" placeholder="Prenon">
+                 </div>
                             
-                            </div>
-                            <br>
-                            <br>
-                            <div class=" d-flex justify-content-center">
-                                
-                                    <input type="submit" id="enregistre" name="submit" value="S'inscrire"
-                                    class="btn btn-primary btn-block btn-lg  ">
-                                
-                                
-                            </div>
-                        </form>
-                    
-                   
-                   
-                </div>
-            </div>
-        </div>
+                 <div class="col-12">
+                                        <label>Nom</label>
+                                        <input type="text" name="lname" class="form-control" id="nom" placeholder="Nom">
+                 </div>
+                 <div class="col-12">
+                                        <label>E-mail</label>
+                                        <input type="email" name="email" class="form-control" id="mail" placeholder="email">
+                 </div>
+                 <div class="col-12">
+                                        <label>password </label>
+                                        <input type="password" name="fname" class="form-control" id="password" placeholder="Nouveau mot de passe">
+                  </div>
+                                    
+                 <div class="col-12">
+                                        <label>repeter le mot de passe</label>
+                                        <input type="password" name="lname" class="form-control" id="confirmer" placeholder="répéter le mot de passe">
+                 </div>
+
+             </div>    
+             <div class=" text-center">
+                                    <input type="submit" id="enregistre" name="submit" value="S'inscrire" class="btn btn-primary btn-block btn-lg  ">
+             </div>
+        </form>
     </div> 
    
 </section>
 
     <footer class="text-center  fixed-botton">
-        <a href="#"><i class="fas fa-chevron-circle-up"></i></a>
         <p>Suivez-nous sur</p>
     
-        <h5>© PromoSanté Abidjan-Cote d'Ivoire 2022</h5>
+        <h5>© Promotion de Santé Abidjan-Cote d'Ivoire 2022</h5>
     </footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 

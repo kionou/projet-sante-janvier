@@ -12,19 +12,19 @@ fetch(`https://disease.sh/v3/covid-19/all
     
      <div class="row">
                     <div class="col-12 ">
-                      <div class="jumbotron rouge ">
+                      <div class="jumbotron rouge shadow-sm p-3 mb-5 bg-body rounded  ">
                                 <p class="text-center">${nombreespace( word.cases)} <br>Cas confirmés au total</p>
                                 
                       </div>
                     </div>
                     <div class="col-12 ">
-                      <div class="jumbotron orange ">
+                      <div class="jumbotron orange shadow-sm p-3 mb-5 bg-body rounded ">
                         <p class="text-center">${nombreespace(word.active)} <br> Cas actifs</p>
                         
                       </div>
                     </div>
                     <div class="col-12 ">
-                      <div class="jumbotron vert ">
+                      <div class="jumbotron vert shadow-sm p-3 mb-5 bg-body rounded  ">
                         <p class="text-center">${nombreespace(word.recovered)} <br> Cas guéris</p>
                         
                       </div>
@@ -33,20 +33,20 @@ fetch(`https://disease.sh/v3/covid-19/all
 
                 <div class="row">
                     <div class="col-12">
-                      <div class="jumbotron noir ">
+                      <div class="jumbotron noir shadow-sm p-3 mb-5 bg-body rounded ">
                         <p class="text-center">${nombreespace(word.deaths)} <br>Décès </p>
                        
                       </div>
                     </div>
                     <div class="col-12">
-                      <div class="jumbotron bleu ">
+                      <div class="jumbotron bleu shadow-sm p-3 mb-5 bg-body rounded ">
                         <p class="text-center">${nombreespace(word.tests)} <br> Nombre total de tests</p>
                        
                       </div>
                     </div>
 
                     <div class="col-12 ">
-                      <div class="jumbotron bleu">
+                      <div class="jumbotron bleu shadow-sm p-3 mb-5 bg-body rounded ">
                         <p class="text-center">${nombreespace(word.affectedCountries)} <br> Pays affectés<p>
                          
                       </div>

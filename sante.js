@@ -11,7 +11,7 @@ fetch(`https://disease.sh/v3/covid-19/countries/cote%20d%27ivoire?strict=true`)
     cote.innerHTML = `
      <div class="row">
                     <div class="col-12 col-lg-4 col-md-4">
-                      <div class="jumbotron rouge  ">
+                      <div class="jumbotron rouge ">
                                 <p class="text-center">${nombreespace(data.cases)} <br> Cas confirmés au total</p>
                                
                       </div>

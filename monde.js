@@ -71,7 +71,7 @@ async function affiche(){
 
 
    for (let i = 0; i < country.length; i++) {
-        const element = country[i];
+                       country[i];
         monde222.innerHTML +=  ` 
                         
                         <td class="text-center" data-label="pays">${ country[i].country}</td>
@@ -97,9 +97,9 @@ search.addEventListener('input' , (e)   =>{
 async function affichepays(){
   country = await cherche()
   console.log(country);
-
-        monde222.innerHTML ="";
-        monde222.innerHTML +=  ` 
+    affiche();
+    monde222.innerHTML ="";
+        monde222.innerHTML =  ` 
                         
                         <td class="text-center" data-label="pays">${ country.country}</td>
                         <td class="text-center" data-label="cas confirmes">${nombreespace(country.cases) }</td>

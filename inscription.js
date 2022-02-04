@@ -7,15 +7,14 @@ var formulaire = document.querySelector('#formulaire')
 let message = document.querySelector('.message');
 let message1 = document.querySelector('.message1')
 console.log(nom);
-var userbase = [];
+
 
 
 if(!localStorage.getItem("users")){
 localStorage.setItem("users" , JSON.stringify([]))
 console.log(localStorage.getItem("users"));
-
-
 }
+
 
 formulaire.addEventListener('submit', (e) => {
     e.preventDefault();

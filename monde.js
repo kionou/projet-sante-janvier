@@ -1,11 +1,6 @@
  let monde11 = document.querySelector('.monde11');
  let monde222 = document.querySelector('.monde222');
  let search = document.querySelector('input');
-//  console.log(search);
-
-
-
-
  
 fetch(`https://disease.sh/v3/covid-19/all
 `)
@@ -18,19 +13,19 @@ fetch(`https://disease.sh/v3/covid-19/all
      <div class="row">
                     <div class="col-12 ">
                       <div class="jumbotron rouge ">
-                                <p class="text-center">${word.cases} <br>Cas confirmés au total</p>
+                                <p class="text-center">${nombreespace( word.cases)} <br>Cas confirmés au total</p>
                                 
                       </div>
                     </div>
                     <div class="col-12 ">
                       <div class="jumbotron orange ">
-                        <p class="text-center">${word.active} <br> Cas actifs</p>
+                        <p class="text-center">${nombreespace(word.active)} <br> Cas actifs</p>
                         
                       </div>
                     </div>
                     <div class="col-12 ">
                       <div class="jumbotron vert ">
-                        <p class="text-center">${word.recovered} <br> Cas guéris</p>
+                        <p class="text-center">${nombreespace(word.recovered)} <br> Cas guéris</p>
                         
                       </div>
                     </div>
@@ -39,20 +34,20 @@ fetch(`https://disease.sh/v3/covid-19/all
                 <div class="row">
                     <div class="col-12">
                       <div class="jumbotron noir ">
-                        <p class="text-center">${word.deaths} <br>Décès </p>
+                        <p class="text-center">${nombreespace(word.deaths)} <br>Décès </p>
                        
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="jumbotron bleu ">
-                        <p class="text-center">${word.tests} <br> Nombre total de tests</p>
+                        <p class="text-center">${nombreespace(word.tests)} <br> Nombre total de tests</p>
                        
                       </div>
                     </div>
 
                     <div class="col-12 ">
                       <div class="jumbotron bleu">
-                        <p class="text-center">${word.affectedCountries} <br> Pays affectés<p>
+                        <p class="text-center">${nombreespace(word.affectedCountries)} <br> Pays affectés<p>
                          
                       </div>
                     </div>
@@ -80,11 +75,11 @@ async function affiche(){
         monde222.innerHTML +=  ` 
                         
                         <td class="text-center" data-label="pays">${ country[i].country}</td>
-                        <td class="text-center" data-label="cas confirmes">${ country[i].cases}</td>
-                        <td class="text-center" data-label="guerri">${ country[i].recovered}</td>
-                        <td class="text-center" data-label="morts">${ country[i].deaths}</td>
-                        <td class="text-center" data-label="cas actifs">${ country[i].active}</td>
-                        <td class="text-center" data-label="tests ">${ country[i].tests}</td>
+                        <td class="text-center" data-label="cas confirmes">${  nombreespace(country[i].cases)}</td>
+                        <td class="text-center" data-label="guerri">${ nombreespace( country[i].recovered)}</td>
+                        <td class="text-center" data-label="morts">${ nombreespace(country[i].deaths) }</td>
+                        <td class="text-center" data-label="cas actifs">${ nombreespace(country[i].active) }</td>
+                        <td class="text-center" data-label="tests ">${ nombreespace( country[i].tests)}</td>
         
         
         `        
@@ -107,11 +102,11 @@ async function affichepays(){
         monde222.innerHTML +=  ` 
                         
                         <td class="text-center" data-label="pays">${ country.country}</td>
-                        <td class="text-center" data-label="cas confirmes">${ country.cases}</td>
-                        <td class="text-center" data-label="guerri">${ country.recovered}</td>
-                        <td class="text-center" data-label="morts">${ country.deaths}</td>
-                        <td class="text-center" data-label="cas actifs">${ country.active}</td>
-                        <td class="text-center" data-label="tests ">${ country.tests}</td>
+                        <td class="text-center" data-label="cas confirmes">${nombreespace(country.cases) }</td>
+                        <td class="text-center" data-label="guerri">${nombreespace(country.recovered) }</td>
+                        <td class="text-center" data-label="morts">${nombreespace( country.deaths)}</td>
+                        <td class="text-center" data-label="cas actifs">${nombreespace( country.active)}</td>
+                        <td class="text-center" data-label="tests ">${nombreespace(country.tests) }</td>
         
         
         `        
@@ -120,10 +115,10 @@ affichepays();
 
 
 
-if (search === "") {
-  console.log(search);
-  
-}
-
 });
 
+
+function nombreespace(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    
+}

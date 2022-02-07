@@ -1,12 +1,10 @@
  let monde11 = document.querySelector('.monde11');
  let monde222 = document.querySelector('.monde222');
- let search = document.querySelector('input');
  
 fetch(`https://disease.sh/v3/covid-19/all
 `)
 .then(res => res.json())
 .then(word => {
-    console.log(word);
 
     monde11.innerHTML = `
     
@@ -56,22 +54,23 @@ fetch(`https://disease.sh/v3/covid-19/all
     `
 })
 
-let recherche = '';
 
-const cherche = async()  => {
-  monde = await fetch(`https://disease.sh/v3/covid-19/countries/${recherche}`)
+let countries;
+function  cherche() {
+  fetch(`https://disease.sh/v3/covid-19/countries`)
   .then(res => res.json())
-  return monde;
+  .then(country  =>{
+      countries = country
+      affiche(country)
+  } )
 
-}
+} 
+cherche()
 
-async function affiche(){
-  country = await cherche()
-  console.log(country);
-
-
+ function affiche(country){
+  monde222.innerHTML = ''
    for (let i = 0; i < country.length; i++) {
-                       country[i];
+                       country[i]; 
         monde222.innerHTML +=  ` 
                         
                         <td class="text-center" data-label="pays">${ country[i].country}</td>
@@ -85,37 +84,6 @@ async function affiche(){
         `        
     }
 }
-affiche();
-
-  
-
-search.addEventListener('input' , (e)   =>{
-    e.preventDefault();
-    recherche = e.target.value
-
-
-async function affichepays(){
-  country = await cherche()
-  console.log(country);
-    affiche();
-    monde222.innerHTML ="";
-        monde222.innerHTML =  ` 
-                        
-                        <td class="text-center" data-label="pays">${ country.country}</td>
-                        <td class="text-center" data-label="cas confirmes">${nombreespace(country.cases) }</td>
-                        <td class="text-center" data-label="guerri">${nombreespace(country.recovered) }</td>
-                        <td class="text-center" data-label="morts">${nombreespace( country.deaths)}</td>
-                        <td class="text-center" data-label="cas actifs">${nombreespace( country.active)}</td>
-                        <td class="text-center" data-label="tests ">${nombreespace(country.tests) }</td>
-        
-        
-        `        
-}
-affichepays();
-
-
-
-});
 
 
 function nombreespace(x) {
